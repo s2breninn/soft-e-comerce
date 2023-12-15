@@ -1,4 +1,4 @@
-import { IconeAjustes, IconeCasa, IconeSair, IconeSino, InconePedido } from "../icons";
+import { IconeAjustes, IconeCasa, IconePerfil, IconeSair, IconeSino, InconePedido } from "../icons";
 import Logo from "./Logo";
 import MenuItem from "./MenuItem";
 
@@ -13,6 +13,7 @@ export default function MenuLateral() {
           <MenuItem url="/ajustes" texto="Ajustes" icone={IconeAjustes}/>
           <MenuItem url="/notificacoes" texto="Notificacões" icone={IconeSino}/>
           <MenuItem url="/pedidos" texto="Pedidos" icone={InconePedido}/>
+          <MenuItem url="/perfil" texto="Perfil" icone={IconePerfil}/>
         </ul>
         <ul>
           <MenuItem url="/" texto="Sair" icone={IconeSair} className="text-red-500 dark:text-red-500 hover:bg-red-500 dark:hover:text-white hover:text-white"/> 

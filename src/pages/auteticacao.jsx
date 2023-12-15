@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import AuthInput from '../components/auth/AuthInpunt'
-import { IconeAtencao } from '../components/icons'
+import { IconeAtencao, IconeGloogle } from '../components/icons'
 import useAuth from '../data/hook/useAuth'
 
 export default function Auteticacao() {
@@ -10,6 +10,7 @@ export default function Auteticacao() {
   const [erro, setErro] = useState(null)
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
+  const [confirmarSenha, setConfirmarSenha] = useState('');
 
   function exibirErro(msg, tempoEmSegundos=3){
     setErro(msg)
@@ -20,6 +21,10 @@ export default function Auteticacao() {
     if(modo == 'login'){
       console.log('login')
     } else {
+      if(senha !== confirmarSenha){
+        exibirErro('As senhas não se coincidem')
+        return
+      }
       console.log('cadastro')
     }
   }
@@ -37,7 +42,7 @@ export default function Auteticacao() {
         
         {erro ? (
           <div className='flex items-center bg-red-500 text-white py-3 px-5 my-2 border border-red-700 rounded-lg'>
-            {IconeAtencao}teste
+            {IconeAtencao}
             <span className='ml-3 text-sm'>{erro}</span>
           </div>
         ): false }
@@ -59,8 +64,8 @@ export default function Auteticacao() {
         <AuthInput
           label="Confirme sua senha"
           tipo='password'
-          valor={senha}
-          valorMudou={setSenha}
+          valor={confirmarSenha}
+          valorMudou={setConfirmarSenha}
           obrigatorio
           naoRenderizar={modo == 'login'}
         />
@@ -71,7 +76,8 @@ export default function Auteticacao() {
 
         <hr className='my-6 border-gray-300 w-full'/>
 
-        <button onClick={loginGloogle} className='w-full bg-red-500 hover:bg-red-400 text-white rounded-lg px-4 py-3'>
+        <button onClick={loginGloogle} className='flex items-center justify-center w-full bg-red-600 hover:bg-red-400 text-white rounded-lg px-4 py-3'>
+          <span className='px-3'>{IconeGloogle}</span>
           Entrar com o Gloogle
         </button>
 
