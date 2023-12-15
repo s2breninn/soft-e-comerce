@@ -6,7 +6,7 @@ export default function Pedido(props) {
 
     return (
         <div className={`${tema} h-20 flex flex-row items-center dark:bg-gray-700 bg-gray-400 border-l-8 rounded-lg p-5 mt-5 cursor-pointer`}>
-            {props.titulo}
+            {props.mesa}
         </div>
     )
 }
