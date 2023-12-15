@@ -4,7 +4,7 @@ export default function InputObservarcao(props) {
   return (
     <div className="col-span-full">
         <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">{props.label}</label>
-        <div className="mt-2">
+        <div className="">
         <textarea
             id="about"
             name="about"

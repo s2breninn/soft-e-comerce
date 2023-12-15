@@ -16,7 +16,7 @@ export default function ModalNovoPedido({ visible, onClose }) {
 
     return (
         <Modal>
-            <div className="border-b border-gray-900/10 bg-slate-200 p-4 rounded-lg pb-12">
+            <div className="border-b inset-1 border-gray-900/10 bg-slate-200 p-4 my-32 rounded-lg pb-12">
                 <div className='flex items-center justify-between'>
                     <h2 className="text-base font-semibold leading-7 text-gray-900">Pedido do cliente</h2>
                     <button className='text-gray-800' onClick={handleOnclose}>
@@ -56,11 +56,11 @@ export default function ModalNovoPedido({ visible, onClose }) {
                             <option>Mesa 03</option>
                             </select>
                         </div>
-                        <div className='my-10'>
-                            <label className='block text-sm font-medium leading-6 text-gray-900'>Tipo de embalagem </label>
-                            <InputAddRadio label="Embalar para levar"/>
-                            <InputAddRadio label="Comer no local"/>
-                        </div>
+                    </div>
+                    <div className=''>
+                        <label className='block text-sm font-medium leading-6 text-gray-900'>Tipo de embalagem </label>
+                        <InputAddRadio label="Embalar para levar"/>
+                        <InputAddRadio label="Comer no local"/>
                     </div>
                     <InputObsevarcao label="Observação"/>
                 </div>
