@@ -16,7 +16,7 @@ export default function BotaoAlterarTema(props) {
         <div className={`hidden lg:flex items-center mr-2 text-gray-200`}>
             <span className="text-sm">Escuro</span>
         </div>
-        <div  className={`flex items-center justify-center bg-black text-yellow-300 w-6 h-6 rounded-full'
+        <div  className={`flex items-center justify-center bg-black text-yellow-300 w-6 h-6 rounded-full
         `}>
             {IconeLua(4)}
         </div>
