@@ -94,7 +94,7 @@ const pedidos = [
     {
       id: 4,
       mesa: 'Mesa 07',
-      status: 'Aguardando pagamento',
+      status: 'Pago',
       cliente: {
         id: 103,
         nome: 'Antonio Bernardo',
