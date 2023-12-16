@@ -7,7 +7,7 @@ export default function ModalPedido({ visible, onClose, pedido }) {
 
   const handleOnClose = () => onClose();
 
-  const { mesa, cliente, produtoPedido } = pedido; // Usando dados do pedido ou do exemplo
+  const { mesa, cliente, produtoPedido, status } = pedido; // Usando dados do pedido ou do exemplo
 
   const calcularTotal = () => {
     let total = 0;
@@ -33,6 +33,7 @@ export default function ModalPedido({ visible, onClose, pedido }) {
             <div>
               <p>Cliente: {cliente.nome}</p> {/* Acessando o nome do cliente */}
               <p>Mesa: {mesa}</p>
+              <p>Status: {status}</p>
             </div>
             {/* Produtos e quantidade */}
             <div className='mt-8'>

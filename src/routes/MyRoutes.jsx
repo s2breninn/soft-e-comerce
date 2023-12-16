@@ -5,8 +5,9 @@ import Dashbord from '../pages/Dashbord';
 import Notificacoes from '../pages/BarraMenu/Notificacoes';
 import Ajustes from '../pages/BarraMenu/Ajustes';
 import Auteticacao from '../pages/auteticacao';
-import Pedidos from "../pages/BarraMenu/pedidos";
+import Pedidos from "../pages/BarraMenu/Pedido/Pedidos";
 import Perfil from "../pages/BarraMenu/Perfil";
+import ModalNovoPedido from "../pages/BarraMenu/Pedido/ModalNovoPedido";
 
 export default function MyRoutes() {
   return (
@@ -19,6 +20,7 @@ export default function MyRoutes() {
           <Route path='/perfil' element={<Perfil />}/>
           <Route path='/ajustes' element={<Ajustes />}/>
           <Route path='/autenticacao' element={<Auteticacao />}/>
+          <Route path='/createpedido' element={<ModalNovoPedido />}/>
       </Routes>
   )
 }
