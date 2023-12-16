@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import useAuth from '../../data/hook/useAuth'
+import useAuth from '../../../data/hook/useAuth'
 
 export default function AvatarUsuario(props) {
     const { usuario } = useAuth()
