@@ -11,9 +11,9 @@ export default function Header() {
             <div className="w-60 max-w-full px-4">
             <a href="/#" className="block w-full py-5">
                 <img
-                src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg"
+                src="https://img.freepik.com/fotos-premium/hamburguer-de-hamburguer-gordo-e-suculento-fast-food-almoco-delicioso-comida-errada-prejudicial_86390-10246.jpg?w=826"
                 alt="logo"
-                className="dark:hidden"
+                className="dark:hidden w-24"
                 />
                 <img
                 src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
@@ -45,14 +45,14 @@ export default function Header() {
                 <ul className="block lg:flex">
                     <ListItem url="/" texto="Home"/>
                     <ListItem url="/dashboard" texto="Dashboard"/>
-                    <ListItem url="/payment" texto="Payment"/>
-                    <ListItem url="/about" texto="About"/>
+                    <ListItem url="/payment" texto="Pague"/>
+                    <ListItem url="/about" texto="Sobre"/>
                 </ul>
                 </nav>
             </div>
             <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
-                <a href="/autenticacao" className="px-7 py-3 text-base font-medium text-dark hover:text-primary dark:text-white"> Sign in</a>
-                <a href="/#" className="rounded-md bg-gray-600 px-7 py-3 text-base font-medium text-white hover:bg-primary/90">Sign Up</a>
+                <a href="/autenticacao" className="px-7 py-3 text-base font-medium text-dark hover:text-primary dark:text-white">Entrar</a>
+                <a href="/#" className="rounded-md bg-orange-500 px-7 py-3 text-base font-medium text-white hover:bg-primary/90">Cadastre-se</a>
             </div>
             </div>
         </div>
